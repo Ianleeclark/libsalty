@@ -1,4 +1,4 @@
-# Salty
+# libsalty2
 
 Libsalty2 provides bindings to [libsodium](https://github.com/jedisct1/libsodium)
 
