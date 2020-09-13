@@ -6,7 +6,7 @@ defmodule Salty.Mixfile do
   def project do
     [
       app: :libsalty2,
-      version: "0.1.4",
+      version: "0.2.1",
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -22,7 +22,7 @@ defmodule Salty.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    []
+    [mod: {Salty.Application, []}]
   end
 
   defp deps do
