@@ -1,12 +1,12 @@
 defmodule Salty.Mixfile do
   use Mix.Project
 
-  @github "https://github.com/ArteMisc/libsalty"
+  @github "https://github.com/ianleeclark/libsalty2"
 
   def project do
     [
       app: :salty,
-      version: "0.1.3",
+      version: "0.1.4",
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -41,9 +41,9 @@ defmodule Salty.Mixfile do
 
   defp package do
     [
-      name: "libsalty",
+      name: "libsalty2",
       files: ["config", "src", "lib", "mix.exs", "Makefile", "LICENSE*", "README*"],
-      maintainers: ["jan@artemisc.eu"],
+      maintainers: ["ian@ianleeclark.com"],
       licenses: ["Apacha License, Version 2.0"],
       links: %{"Github" => @github}
     ]
