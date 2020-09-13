@@ -7,7 +7,7 @@ defmodule Salty.Nif do
   binds the Elixir module methods to erl_nif calls.
   """
   def load_nif do
-    path = :filename.join([:code.priv_dir(:salty), "salty_nif"])
+    path = :filename.join([:code.priv_dir(:libsalty2), "salty_nif"])
     case :erlang.load_nif(path, 0) do
       :ok -> :ok
       error -> {:error, error}
